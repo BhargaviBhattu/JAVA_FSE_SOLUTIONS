@@ -3,3 +3,5 @@ public class CarTest{
     CarFactory factory=new CarFactory();
     Car suvCar=factory.getCar("SUV");
     suvCar.assemble();
+  }
+}
