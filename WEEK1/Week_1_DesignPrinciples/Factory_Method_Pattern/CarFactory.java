@@ -1,11 +1,11 @@
-public class CarFctory{
+public class CarFactory{
   public Car getCar(String carType){
     if(carType==null){
       return null;
     }
-    if(carType.equalsIgnoreCase("SUV"){
+    if(carType.equalsIgnoreCase("SUV")){
       return new SUV();
-    }else if(carType.equalsIgnoreCase("Sedan"){
+    }else if(carType.equalsIgnoreCase("Sedan")){
       return new Sedan();
     }
     return null;
