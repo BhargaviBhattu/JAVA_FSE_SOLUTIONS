@@ -5,14 +5,14 @@ public class ForecastApp {
         Scanner sc = new Scanner(System.in);
 
         System.out.println(" Financial Revenue Forecast");
-        System.out.print("Enter base year (e.g. 2024): ");
+        System.out.print("Enter base year : ");
         int baseYear = sc.nextInt();
 
-        System.out.print("Enter initial revenue (in Cr): ");
+        System.out.print("Enter initial revenue : ");
         double baseRevenue = sc.nextDouble();
 
-        System.out.print("Enter annual growth rate (%): ");
-        double growthRate = sc.nextDouble() / 100.0; // convert to decimal
+        System.out.print("Enter annual growth rate : ");
+        double growthRate = sc.nextDouble() / 100.0; 
 
         System.out.print("Enter number of years to forecast: ");
         int years = sc.nextInt();
