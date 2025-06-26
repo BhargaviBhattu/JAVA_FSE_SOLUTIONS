@@ -44,6 +44,18 @@ begin
     end case;
 end;
 /
+    
+/*  LOOP  */
+DECLARE
+    i NUMBER := 1;
+BEGIN
+    LOOP
+        EXIT WHEN i > 5;
+        DBMS_OUTPUT.PUT_LINE('Number: ' || i);
+        i := i + 1;
+    END LOOP;
+END;
+    
   
 /*  FOR LOOP   */
 declare 
@@ -65,23 +77,19 @@ end
 /
 
 /*   WHILE LOOP   */
-declare 
-n number:=&n;
+declare
+    num number := 56;
+    flag boolean := true;
 begin
-    for i in 1..100 loop
-
-        if mod(i, n) != 0 then
-            goto continue_loop;  
+    while flag loop
+        if mod(num, 2) = 0 then
+            dbms_output.put_line(num || ' is even');
+        else
+            dbms_output.put_line(num || ' is odd');
         end if;
-
-        dbms_output.put_line(i || ' is a multiple of' || n);
-
-<<continue_loop>>
-        null;
-
+        flag := false;
     end loop;
-end
-/
+end;
 
 /*   GOTO AND EXIT   */
 begin
