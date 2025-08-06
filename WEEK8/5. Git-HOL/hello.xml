@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-<message>Hello from master branch after edit</message>
-=======
-<message>Hello from GitWork branch</message>
->>>>>>> GitWork
+<message>Hello from merged branch (master + GitWork)</message>
